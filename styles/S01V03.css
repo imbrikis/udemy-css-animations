@@ -1,0 +1,42 @@
+#practice-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+
+.move {
+  width: 10rem;
+  height: 5rem;
+  background-color: lightblue;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: translate();
+  transition-duration: 2s;
+}
+
+#ease {
+  transition-timing-function: ease;
+}
+
+#linear {
+  transition-timing-function: linear;
+}
+
+#ease-in {
+  transition-timing-function: ease-in;
+}
+
+#ease-out {
+  transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.move:hover {
+  transform: translate(80vw, 0);
+}
